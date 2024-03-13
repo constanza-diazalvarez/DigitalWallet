@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+#botonVerificar {
+    background-color: #2ecc71;
+    color: #ffffff !important;
+    border: 2px solid #2ecc71 !important;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+#botonVerificar:hover {
+    border-color: #1a7640 !important;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #2ecc703b);
+}

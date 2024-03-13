@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet - Iniciar Sesión</title>
+    <link rel="icon" type="image/png" href="../img/piggybank_white.png">
+    <link rel="stylesheet" href="../css/loginStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body class="bg-black text-white">
+
+    <!--Alerta-->
+    <div class="d-none alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" width="20" height="20" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <div>
+        Correo y/o contraseña inválidos. Por favor inténtelo nuevamente.
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="cerrar"></button>
+    </div>
+    <br>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center text-white">
+        <div class="row w-50 pt-4">
+            <div class="col">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
+                        <path d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069q0-.218-.02-.431c.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a1 1 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.74.74 0 0 0-.375.562c-.024.243.082.48.32.654a2 2 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595m7.173 3.876a.6.6 0 0 1-.098.21l-.044-.025c-.146-.09-.157-.175-.152-.223a.24.24 0 0 1 .117-.173c.049-.027.08-.021.113.012a.2.2 0 0 1 .064.199m-8.999-.65a.5.5 0 1 1-.276-.96A7.6 7.6 0 0 1 7.964 3.5c.763 0 1.497.11 2.18.315a.5.5 0 1 1-.287.958A6.6 6.6 0 0 0 7.964 4.5c-.64 0-1.255.09-1.826.254ZM5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0"/>
+                      </svg>
+                    <br>
+                    Digital Wallet</h1>
+
+                <form id="formulario-datos" novalidate>
+                    <div class="md-6 mb-4">
+                        <label for="inputEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required/>
+                        <div class="invalid-feedback">
+                            Ingrese correo válido
+                        </div>
+                    </div>
+                    <div class="md-6 mb-4">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control " id="inputPassword" required/>
+                        <div class="invalid-feedback">
+                            Ingrese contraseña correcta
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-10 mx-auto">
+                        <button type="submit" id="botonVerificar" class="btn">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+    <footer class="fixed-bottom text-sm-end flex-md-wrap">
+        <div class="container">
+             <p class="fst-italic">This code has been written with Coffee & Suffering <br> Patent Pending</p>    
+        </div>
+    </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/loginApp.js"></script>
+</body>
+</html>
